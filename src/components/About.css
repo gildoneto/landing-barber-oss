@@ -70,13 +70,40 @@
 /* Card de Perfil do Instagram */
 .about-image-wrapper {
   position: relative;
-  background-color: var(--color-surface);
   border: 1px solid var(--color-border);
+  padding: var(--spacing-sm);
+  background-color: var(--color-surface);
   border-radius: var(--rounded-md);
-  padding: 0;
-  overflow: hidden;
-  max-width: 380px;
+  max-width: 420px;
   margin: 0 auto;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+  filter: grayscale(100%) contrast(1.1);
+  transition: filter 0.3s ease;
+}
+
+.about-image-wrapper:hover .about-image {
+  filter: grayscale(0%) contrast(1);
+}
+
+.about-image-tag {
+  position: absolute;
+  bottom: var(--spacing-md);
+  right: var(--spacing-md);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 6px 12px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-ink);
 }
 
 .insta-header {
