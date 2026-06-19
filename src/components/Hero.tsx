@@ -11,27 +11,27 @@ export const Hero: React.FC<HeroProps> = ({ bookingUrl }) => {
   return (
     <section id="hero" className="hero">
       <div className="hero-overlay" />
-      <img 
-        src="/gallery-dojo.png" 
-        alt="Barber Oss Background" 
+      <img
+        src="/gallery-dojo.png"
+        alt="Barber Oss Background"
         className="hero-bg-media"
         onError={(e) => {
           // Fallback if gallery-dojo doesn't exist yet
           e.currentTarget.style.display = 'none';
         }}
       />
-      
+
       <div className="container hero-container">
-        <motion.span 
+        <motion.span
           className="hero-kicker text-mono"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          [ PROTOCOLO // EST. 2023 ]
+          [ PROTOCOLO // SINCE 2016 ]
         </motion.span>
 
-        <motion.h1 
+        <motion.h1
           className="hero-title"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ export const Hero: React.FC<HeroProps> = ({ bookingUrl }) => {
           Cortes Táticos & Cultura BJJ
         </motion.h1>
 
-        <motion.p 
+        <motion.p
           className="hero-desc"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -49,16 +49,16 @@ export const Hero: React.FC<HeroProps> = ({ bookingUrl }) => {
           Barbearia Barber Oss, comandada pelo profissional Braulio Almeida (Braw) em Recife/PE. Onde a excelência do corte de cabelo e tranças encontra a disciplina e a saudação das artes marciais.
         </motion.p>
 
-        <motion.div 
+        <motion.div
           className="hero-cta-wrapper"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <a 
-            href={bookingUrl} 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href={bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hero-cta"
           >
             <Calendar size={20} />
