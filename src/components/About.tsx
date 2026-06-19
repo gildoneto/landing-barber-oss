@@ -19,10 +19,10 @@ export const About: React.FC = () => {
           <h2 className="about-title">Braulio Almeida (Braw)</h2>
           <div className="about-text">
             <p>
-              Braulio Almeida, amplamente conhecido como Braw, é o fundador e a mente criativa por trás da Barber Oss. Formado pelo SENAC-PE em 2016 como Trancista e Educador, ele traz anos de experiência técnica e paixão pela excelência no design capilar e estilo urbano.
+              A jornada de Braulio (Braw) começou de forma autodidata, cortando seu próprio cabelo por insatisfação com os acabamentos que recebia. O cuidado se estendeu a amigos e familiares até que o desafio de realizar um corte complexo na máquina e tesoura o impulsionou a se profissionalizar. Em 2016 concluiu o curso de barbeiro no SENAC e, em 2019, tornou-se trancista, aperfeiçoando sua técnica no Morro da Conceição.
             </p>
             <p>
-              Iniciou sua trajetória na barbearia tradicional, mas rapidamente conquistou seu próprio espaço físico. Além de barbeiro especialista em cortes de alta precisão e tranças, Braw é um lutador ativo de Jiu-Jitsu — a arte suave que dá nome à barbearia através da clássica saudação "Oss!".
+              Após anos de dedicação, o grande marco da autonomia veio em 2020 (pós-pandemia), ao alugar uma sala comercial no salão Danielle Cabeleireira, que confiou em seu potencial e deu a liberdade necessária para gerenciar o negócio. Desde então, unindo a arte das navalhas e a disciplina do Jiu-Jitsu, Braw comanda a Barber Oss com excelência.
             </p>
           </div>
 
@@ -126,7 +126,7 @@ export const About: React.FC = () => {
                 rel="noopener noreferrer"
                 className="insta-post-preview"
               >
-                <img src="/gallery-fade.png" alt="Fade Cut Post" className="insta-post-img" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img src="/gallery-fade.jpg" alt="Fade Cut Post" className="insta-post-img" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                 <div className="insta-post-overlay">
                   <div className="insta-post-overlay-content">
                     <Heart size={12} fill="white" style={{ marginRight: 2 }} /> 182
@@ -139,7 +139,7 @@ export const About: React.FC = () => {
                 rel="noopener noreferrer"
                 className="insta-post-preview"
               >
-                <img src="/gallery-braids.png" alt="Braids Post" className="insta-post-img" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img src="/gallery-braids.jpg" alt="Braids Post" className="insta-post-img" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                 <div className="insta-post-overlay">
                   <div className="insta-post-overlay-content">
                     <Heart size={12} fill="white" style={{ marginRight: 2 }} /> 245

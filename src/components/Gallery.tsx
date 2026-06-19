@@ -16,19 +16,19 @@ const GALLERY_ITEMS: GalleryItem[] = [
     id: 1,
     title: 'Corte Degradê (Fade)',
     tag: '[ STYLE // 01 ]',
-    imageSrc: '/gallery-fade.png',
+    imageSrc: '/gallery-fade.jpg',
   },
   {
     id: 2,
     title: 'Tranças Masculinas',
     tag: '[ BRAIDS // 02 ]',
-    imageSrc: '/gallery-braids.png',
+    imageSrc: '/gallery-braids.jpg',
   },
   {
     id: 3,
     title: 'Barba Alinhada',
     tag: '[ BEARD // 03 ]',
-    imageSrc: '/gallery-beard.png',
+    imageSrc: '/gallery-beard.jpg',
   },
   {
     id: 4,
@@ -61,8 +61,8 @@ export const Gallery: React.FC = () => {
             const hasError = imageErrors[item.id] || !item.imageSrc;
 
             return (
-              <motion.div 
-                key={item.id} 
+              <motion.div
+                key={item.id}
                 className="gallery-card"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -81,9 +81,9 @@ export const Gallery: React.FC = () => {
                       </span>
                     </div>
                   ) : (
-                    <img 
-                      src={item.imageSrc} 
-                      alt={item.title} 
+                    <img
+                      src={item.imageSrc}
+                      alt={item.title}
                       className="gallery-image"
                       onError={() => handleImageError(item.id)}
                     />
@@ -99,10 +99,10 @@ export const Gallery: React.FC = () => {
         </div>
 
         <div className="gallery-instagram-cta">
-          <a 
-            href="https://www.instagram.com/ossbarber/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://www.instagram.com/ossbarber/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="instagram-btn"
           >
             <InstagramIcon style={{ width: 18, height: 18 }} />
