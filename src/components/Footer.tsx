@@ -16,6 +16,17 @@ export const Footer: React.FC = () => {
         <p className="footer-text">
           &copy; {currentYear} Barber Oss. Todos os direitos reservados.
         </p>
+        <p className="footer-text" style={{ fontSize: '0.75rem', marginTop: '4px' }}>
+          Desenvolvido por{' '}
+          <a 
+            href="https://gildo-portfolio.vercel.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'underline', color: 'var(--color-primary)' }}
+          >
+            Gildo Neto
+          </a>
+        </p>
 
         <ul className="footer-links">
           <li>
