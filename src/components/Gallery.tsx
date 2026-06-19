@@ -32,9 +32,15 @@ const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 4,
-    title: 'Estilo & Dojo',
-    tag: '[ CULTURE // 04 ]',
-    imageSrc: '/gallery-dojo.png',
+    title: 'Combo: Cabelo + Barba',
+    tag: '[ COMBO // 04 ]',
+    imageSrc: '/gallery-combo.jpg',
+  },
+  {
+    id: 5,
+    title: 'Cabelo Black / Afro',
+    tag: '[ BLACK // 05 ]',
+    imageSrc: '/gallery-black.jpg',
   },
 ];
 
